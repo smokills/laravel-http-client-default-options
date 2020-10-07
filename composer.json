@@ -1,0 +1,54 @@
+{
+    "name": "smokills/laravel-http-client-default-options",
+    "description": "Extends the native Laravel Http Client, so that you can define global options",
+    "keywords": [
+        "laravel",
+        "package",
+        "smokills",
+        "laravel-http-client-default-options"
+    ],
+    "homepage": "https://github.com/smokills/laravel-http-client-default-options",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Vito Famiglietti",
+            "email": "vito.famiglietti@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/http": "^7.0 || ^8.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "illuminate/support": "^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Smokills\\Http\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Smokills\\Http\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Smokills\\Http\\ServiceProvider"
+            ]
+        }
+    }
+}
