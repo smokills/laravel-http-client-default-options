@@ -1,4 +1,4 @@
-# Very short description of the package
+# Laravel Http Client default options
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/smokills/laravel-http-client-default-options.svg?style=flat-square)](https://packagist.org/packages/smokills/laravel-http-client-default-options)
 [![Build Status](https://img.shields.io/travis/smokills/laravel-http-client-default-options/master.svg?style=flat-square)](https://travis-ci.org/smokills/laravel-http-client-default-options)
