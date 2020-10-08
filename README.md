@@ -73,18 +73,18 @@ If you need to remove several or even all of the the default options, in order t
 
 ```php
 // Remove all of the default options...
-$response = Http::withoutGlobalOptions()->get('https://bar.com');
+$response = Http::withoutDefaultOptions()->get('https://bar.com');
 
 // Remove some of the global options
-$response = Http::withoutGlobalOptions([
+$response = Http::withoutDefaultOptions([
     'option', 'another-option'
 ])->get('https://bar.com');
 
 // You can pass options to remove as arguments as well
-$response = Http::withoutGlobalOptions('option', 'another-option')->get('https://bar.com');
+$response = Http::withoutDefaultOptions('option', 'another-option')->get('https://bar.com');
 
 // If you would like to remove deeply nested options, you may use the the dot notation syntax
-$response = Http::withoutGlobalOptions('header.X-Some-Header')->get('https://bar.com');
+$response = Http::withoutDefaultOptions('header.X-Some-Header')->get('https://bar.com');
 ```
 
 ### Testing
