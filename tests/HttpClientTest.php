@@ -68,7 +68,7 @@ class HttpClientTest extends TestCase
         $this->factory->withOptions([
             'headers' => [
                 'X-Another-Custom-Header' => 'another-custom-value',
-            ]
+            ],
         ])->get('https://foo.com');
 
         $this->factory->assertSent(function ($request) {
@@ -90,7 +90,7 @@ class HttpClientTest extends TestCase
         $this->factory->withOptions([
             'headers' => [
                 'X-Another-Custom-Header' => 'another-custom-value'
-            ]
+            ],
         ])->withBasicAuth('username', 'password')->get('https://foo.com');
 
         $this->factory->assertSent(function ($request) {
@@ -206,7 +206,7 @@ class HttpClientTest extends TestCase
     public function test_that_we_can_still_use_the_client_without_default_options_set()
     {
         $this->factory->fake([
-            '*' => $this->factory->response()
+            '*' => $this->factory->response(),
         ]);
 
         $response = $this->factory->get('htpps://foo.com');
@@ -217,7 +217,7 @@ class HttpClientTest extends TestCase
     public function test_that_we_can_still_define_macros_without_default_options_set()
     {
         $this->factory->fake([
-            '*' => $this->factory->response()
+            '*' => $this->factory->response(),
         ]);
 
         $this->factory->macro('addXCustomHeader', function () {
