@@ -89,7 +89,7 @@ class HttpClientTest extends TestCase
 
         $this->factory->withOptions([
             'headers' => [
-                'X-Another-Custom-Header' => 'another-custom-value'
+                'X-Another-Custom-Header' => 'another-custom-value',
             ],
         ])->withBasicAuth('username', 'password')->get('https://foo.com');
 
