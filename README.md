@@ -1,9 +1,11 @@
 # Laravel Http Client default options
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/smokills/laravel-http-client-default-options.svg?style=flat-square)](https://packagist.org/packages/smokills/laravel-http-client-default-options)
-[![Build Status](https://img.shields.io/travis/smokills/laravel-http-client-default-options/master.svg?style=flat-square)](https://travis-ci.org/smokills/laravel-http-client-default-options)
-[![Quality Score](https://img.shields.io/scrutinizer/g/smokills/laravel-http-client-default-options.svg?style=flat-square)](https://scrutinizer-ci.com/g/smokills/laravel-http-client-default-options)
+[![Build Status](https://img.shields.io/travis/smokills/laravel-http-client-default-options/stable.svg?style=flat-square)](https://travis-ci.org/smokills/laravel-http-client-default-options?branch=stable)
+<!-- [![Quality Score](https://img.shields.io/scrutinizer/g/smokills/laravel-http-client-default-options.svg?style=flat-square)](https://scrutinizer-ci.com/g/smokills/laravel-http-client-default-options) -->
 [![Total Downloads](https://img.shields.io/packagist/dt/smokills/laravel-http-client-default-options.svg?style=flat-square)](https://packagist.org/packages/smokills/laravel-http-client-default-options)
+[![License](https://img.shields.io/packagist/l/smokills/laravel-http-client-default-options.svg?style=flat-square)](https://packagist.org/packages/smokills/laravel-http-client-default-options)
+
 
 Set default available options to the Laravel Http Client.
 
