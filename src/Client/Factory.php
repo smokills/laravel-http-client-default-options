@@ -53,7 +53,7 @@ class Factory extends BaseFactory
             return $this->macroCall($method, $parameters);
         }
 
-        if ($this->defaultOptions && !$this->ignoreDefaultOptions) {
+        if ($this->defaultOptions && ! $this->ignoreDefaultOptions) {
             return tap(new PendingRequest($this), function ($request) {
                 $request->withOptions($this->defaultOptions)
                     ->stub($this->stubCallbacks);

@@ -2,9 +2,9 @@
 
 namespace Smokills\Http;
 
-use Smokills\Http\Client\Factory;
 use Illuminate\Http\Client\Factory as BaseFactory;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Smokills\Http\Client\Factory;
 
 class ServiceProvider extends BaseServiceProvider
 {

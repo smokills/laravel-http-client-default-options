@@ -25,7 +25,7 @@ class HttpClientTest extends TestCase
 
         $this->factory->withDefaultOptions([
             'headers' => [
-                'X-Custom-Header' => 'custom-value'
+                'X-Custom-Header' => 'custom-value',
             ],
         ]);
 
@@ -42,7 +42,7 @@ class HttpClientTest extends TestCase
 
         $this->factory->withDefaultOptions([
             'headers' => [
-                'X-Custom-Header' => 'custom-value'
+                'X-Custom-Header' => 'custom-value',
             ],
         ]);
 
@@ -61,13 +61,13 @@ class HttpClientTest extends TestCase
 
         $this->factory->withDefaultOptions([
             'headers' => [
-                'X-Custom-Header' => 'custom-value'
+                'X-Custom-Header' => 'custom-value',
             ],
         ]);
 
         $this->factory->withOptions([
             'headers' => [
-                'X-Another-Custom-Header' => 'another-custom-value'
+                'X-Another-Custom-Header' => 'another-custom-value',
             ]
         ])->get('https://foo.com');
 
@@ -83,7 +83,7 @@ class HttpClientTest extends TestCase
 
         $this->factory->withDefaultOptions([
             'headers' => [
-                'X-Custom-Header' => 'custom-value'
+                'X-Custom-Header' => 'custom-value',
             ],
         ]);
 
@@ -106,7 +106,7 @@ class HttpClientTest extends TestCase
 
         $this->factory->withDefaultOptions([
             'headers' => [
-                'X-Custom-Header' => 'custom-value'
+                'X-Custom-Header' => 'custom-value',
             ],
         ]);
 
@@ -126,7 +126,7 @@ class HttpClientTest extends TestCase
         $this->factory->withDefaultOptions([
             'headers' => [
                 'X-Custom-Header' => 'custom-value',
-                'X-Another-Custom-Header' => 'another-custom-value'
+                'X-Another-Custom-Header' => 'another-custom-value',
             ],
         ]);
 
@@ -146,7 +146,7 @@ class HttpClientTest extends TestCase
         $this->factory->withDefaultOptions([
             'headers' => [
                 'X-Custom-Header' => 'custom-value',
-                'X-Another-Custom-Header' => 'another-custom-value'
+                'X-Another-Custom-Header' => 'another-custom-value',
             ],
             'auth' => ['username', 'password'],
         ]);
@@ -169,7 +169,7 @@ class HttpClientTest extends TestCase
         $this->factory->withDefaultOptions([
             'headers' => [
                 'X-Custom-Header' => 'custom-value',
-                'X-Another-Custom-Header' => 'another-custom-value'
+                'X-Another-Custom-Header' => 'another-custom-value',
             ],
             'auth' => ['username', 'password'],
         ]);
@@ -240,7 +240,7 @@ class HttpClientTest extends TestCase
         $this->factory->withDefaultOptions([
             'headers' => [
                 'X-Custom-Header' => 'custom-value',
-                'X-Another-Custom-Header' => 'another-custom-value'
+                'X-Another-Custom-Header' => 'another-custom-value',
             ],
             'auth' => ['username', 'password'],
         ]);
