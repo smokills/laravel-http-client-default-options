@@ -1,4 +1,3 @@
-# Laravel Http Client default options
 
 ![Image of package](https://banners.beyondco.de/Laravel%20Http%20Client%20Default%20Options.jpeg?theme=light&packageName=require+smokills%2Flaravel-http-client-default-options&pattern=architect&style=style_1&description=Extends+the+native+Laravel+Http+Client%2C+so+that+you+can+define+default+options&md=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
 
