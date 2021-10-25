@@ -19,7 +19,9 @@ class ServiceProvider extends BaseServiceProvider
         // Register the main class to use with the facade
         $this->app->bind(
             BaseFactory::class,
-            fn ($app) => new Factory($app->make(Dispatcher::class))
+            function ($app) {
+                return new Factory($app->make(Dispatcher::class));
+            }
         );
     }
 }
