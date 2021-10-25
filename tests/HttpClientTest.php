@@ -27,7 +27,6 @@ class HttpClientTest extends TestCase
      * Get package providers.
      *
      * @param  \Illuminate\Foundation\Application  $app
-     *
      * @return array
      */
     protected function getPackageProviders($app)
@@ -209,7 +208,7 @@ class HttpClientTest extends TestCase
             '*' =>  Http::response(),
         ]);
 
-        $response =  Http::get('htpps://foo.com');
+        $response = Http::get('htpps://foo.com');
 
         $this->assertEquals(200, $response->status());
     }
@@ -224,7 +223,7 @@ class HttpClientTest extends TestCase
             return $this->withHeaders(['X-Custom-Header' => 'custom-value']);
         });
 
-        $response =  Http::addXCustomHeader()->get('https://foo.com');
+        $response = Http::addXCustomHeader()->get('https://foo.com');
 
         Http::assertSent(function ($request) {
             return $request->hasHeader('X-Custom-Header', 'custom-value');
