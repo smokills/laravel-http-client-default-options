@@ -47,19 +47,14 @@ class Factory extends BaseFactory
         return $this;
     }
 
-    public function __call($method, $parameters)
+    protected function newPendingRequest()
     {
-        if (static::hasMacro($method)) {
-            return $this->macroCall($method, $parameters);
-        }
+        $request = new PendingRequest($this);
 
         if ($this->defaultOptions && ! $this->ignoreDefaultOptions) {
-            return tap(new PendingRequest($this), function ($request) {
-                $request->withOptions($this->defaultOptions)
-                    ->stub($this->stubCallbacks);
-            })->{$method}(...$parameters);
+            $request->withOptions($this->defaultOptions);
         }
 
-        return parent::__call($method, $parameters);
+        return $request;
     }
 }
